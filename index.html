@@ -42,9 +42,10 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("btn-ga4-trace").onclick = function () {
-            dataLayer.push("event", "fire_to_google", {
-            clickElement: "button",
-          });
+            dataLayer.push(
+                {'event': 'fire_to_google',
+                'clickElement': "button",} 
+           );
         };
       });
     </script>
