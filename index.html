@@ -39,13 +39,21 @@
       GA4 Button Trace Test
     </button>
 
+    <button id="btn-ga4-trace-none" data-click="index-ga4-button">
+      None Setting Event
+    </button>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("btn-ga4-trace").onclick = function () {
-            dataLayer.push(
-                {'event': 'fire_to_google',
-                'clickElement': "button",} 
-           );
+          dataLayer.push({ event: "fire_to_google", clickElement: "button" });
+        };
+
+        document.getElementById("btn-ga4-trace-none").onclick = function () {
+          dataLayer.push({
+            event: "do_not_fire_to_ga4",
+            clickElement: "button",
+          });
         };
       });
     </script>
