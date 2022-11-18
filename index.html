@@ -61,7 +61,7 @@
         };
 
         let myButtons = document.querySelectorAll(".fire");
-        for (let index = 0; myButtons < array.length; index++) {
+        for (let index = 0; index < myButtons.length; index++) {
           myButtons[index].addEventListener("click", function () {
             dataLayer.push({
               event: "fire_to_fire",
