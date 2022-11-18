@@ -22,8 +22,15 @@
     <h1>Hello GA4 Home</h1>
     <a id="contact" href="contact">Contact</a>
 
-    <button data-click="index-ga4-button">GA4 Button Trace Test</button>
+    <button id="btn-ga4-trace" data-click="index-ga4-button">GA4 Button Trace Test</button>
 
+    <script>
+        document.getElementById('btn-ga4-trace').click(function(){
+            gtag('event', 'fire_to_google', {
+                    'clickElement':'button',                    
+            });        
+        });
+    </script>
 
   </body>
 </html>
