@@ -25,11 +25,11 @@
     <button id="btn-ga4-trace" data-click="index-ga4-button">GA4 Button Trace Test</button>
 
     <script>
-        document.getElementById('btn-ga4-trace').onclick(function(){
+        document.getElementById('btn-ga4-trace').onclick = function(){
             gtag('event', 'fire_to_google', {
                     'clickElement':'button',                    
             });        
-        });
+        };
     </script>
 
   </body>
