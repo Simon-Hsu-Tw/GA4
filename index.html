@@ -35,12 +35,16 @@
     <h1>Hello GA4 Home</h1>
     <a id="contact" href="contact">Contact</a>
 
-    <button id="btn-ga4-trace" data-click="index-ga4-button">
+    <button id="btn-ga4-trace" data-click="index-ga4-button" class="fire">
       GA4 Button Trace Test
     </button>
 
     <button id="btn-ga4-trace-none" data-click="index-ga4-button">
       None Setting Event
+    </button>
+
+    <button id="btn-ga4-trace-fire" data-click="index-ga4-button" class="fire">
+      Fire
     </button>
 
     <script>
@@ -55,6 +59,16 @@
             clickElement: "button",
           });
         };
+
+        let myButtons = document.querySelectorAll(".fire");
+        for (let index = 0; myButtons < array.length; index++) {
+          myButtons[index].addEventListener("click", function () {
+            dataLayer.push({
+              event: "fire_to_fire",
+              clickElement: "button",
+            });
+          });
+        }
       });
     </script>
   </body>
