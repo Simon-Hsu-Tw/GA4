@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GA4</title>
-    
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <!-- Google Tag Manager -->
     <script>
@@ -33,13 +33,15 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+<div class="header_container">
+  <header class="header">
     <h1>Hello GA4 Home</h1>
-    <a id="contact" data-button="contact_link" class="nav-button-contact" href="contact.html">Contact</a>
-    <a id="about" data-button="about_link" class="nav-button-about" href="about.html">About</a>
+    <p class="header--text">超連結</p>
+    <a id="contact" data-button="contact_link" class="nav-button-contact" href="contact.html">前往 Contact 聯絡我</a>
+    <a id="about" data-button="about_link" class="nav-button-about" href="about.html">前往 About 關於我 </a>
 
-
-
-
+    <p class="header--text">一般按鈕</p>
 
     <button id="btn-ga4-trace" data-click="index-ga4-button" class="fire">
       GA4 Button Trace Test
@@ -52,6 +54,37 @@
     <button id="btn-ga4-trace-fire" data-click="index-ga4-button" class="fire">
       Fire
     </button>
+
+    <p class="header--text">GTM追蹤的按鈕</p>
+
+    <button class="gtm--btn">
+      汽車險      
+    </button>
+
+
+    <button class="gtm--btn">
+      機車險      
+    </button>
+
+    <button class="gtm--btn">
+      傷害險      
+    </button>
+
+
+
+
+  </header>
+
+</div>
+
+  
+
+    
+
+
+
+
+
 
     <script>
       $(function(){

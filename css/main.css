@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+
+.header{
+    height: 45vh;
+    width: 640px;
+    left: 50%;
+    top: 35%;
+    position: absolute;
+    transform: translate(-50%,-35%);
+    text-align: center;
+}
+
+.header h1{
+    font-size: 64px;
+}
+.header p{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header a{
+    font-size: 24px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-shadow: 1px 1px rgba(204, 204, 204, 0.57);
+    color: white;
+    background-color: dimgray;
+    margin-bottom: 15px;
+    display: block;
+}
+.header button{
+    padding: 10px 15px;
+    
+    margin-right: 10px;
+}
